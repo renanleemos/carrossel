@@ -1,46 +1,106 @@
-* {
-    margin: 0;
-    padding: 0;
-
-}
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;800;900&display=swap");
 
 body {
-    background: url(https://s3.amazonaws.com/plugcrm-app/63061d7…/instance_file/6330995….png) no-repeat right bottom #353467;
+  background-color: #353467;
 }
 
-.container {
-    display: flex;
+.wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
-.slide-content {
-    width: 580px;
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  border: 1px solid red;
 }
 
-
-.slide-container {
-    padding: 60px 20px;
+.carousel .item {
+  cursor: pointer;
+  margin-right: 20px;
+  
 }
 
-.card-image {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.5s ease-in;
-    cursor: pointer;
+.content {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  border: 1px solid green;
 }
 
-.card-image:hover {
-    transform: scale(1.4);
+.content .item {
+  display: none;
+  width: 100%;
+  position: relative;
+}
+
+.content .active {
+  display: block;
+}
+
+.active-mouse:hover {
+  transform: scale(1.4);
+  transition: all 0.5s ease-in;
+  cursor: pointer;
+}
+
+.content__item__description {
+  border: 1px solid yellow;
+  height: 465px;
+}
+
+.content__item__description:nth-child(3n) {
+    border: 1px solid red;
     
-}
-#div1, #div2, #div3 {
-    color: #FFFFFF;
-    display: none;
+  }
+
+.description__title {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 38px;
+  color: #ffffff;
+  margin: 0;
 }
 
+.description {
+  width: 494px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  margin-top: 32px;
+}
 
-@media screen and (max-width: 1000px) {
-    .slide-content {
-        width: auto;
-    }
+.description p {
+  margin-bottom: 32px;
+}
+
+.description span {
+  width: 160px;
+  height: 42px;
+  background: #ff662d;
+  padding: 12px 52px;
+}
+
+.content__item__description__icon {
+    position: absolute;
+    bottom: 0;
+}
+
+.bottom__icon {
+    bottom: -43px;
+    left: 3px;
 }
