@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background: url(https://s3.amazonaws.com/plugcrm-app/63061d7…/instance_file/6330995….png) no-repeat right bottom #353467;
+}
+
+.container {
+    display: flex;
+}
+
+.slide-content {
+    width: 580px;
+}
+
+
+.slide-container {
+    padding: 60px 20px;
+}
+
+.card-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+    cursor: pointer;
+}
+
+.card-image:hover {
+    transform: scale(1.4);
+    
+}
+#div1, #div2, #div3 {
+    color: #FFFFFF;
+    display: none;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .slide-content {
+        width: auto;
+    }
+}
