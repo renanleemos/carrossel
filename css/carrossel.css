@@ -22,12 +22,39 @@ body {
   height: 100%;
   border: 1px solid red;
   transform: translateX(0px);
+  flex-direction: column;
 }
 
 .carousel .item {
   cursor: pointer;
   margin-right: 20px;
-  
+}
+
+.carousel__title {
+  position: relative;
+  width: 562px;
+  left: 68px;
+  top: -50px;
+}
+
+.carousel__title span {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 16px;
+
+  color: #ff662d;
+}
+
+.carousel__title h3 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 38px;
+
+  color: #ffffff;
 }
 
 .content {
@@ -60,9 +87,8 @@ body {
 }
 
 .content__item__description:nth-child(3n) {
-    border: 1px solid red;
-    
-  }
+  border: 1px solid red;
+}
 
 .description__title {
   font-family: "Raleway";
@@ -97,11 +123,11 @@ body {
 }
 
 .content__item__description__icon {
-    position: absolute;
-    bottom: 0;
+  position: absolute;
+  bottom: 0;
 }
 
 .bottom__icon {
-    bottom: -43px;
-    left: 3px;
+  bottom: -43px;
+  left: 3px;
 }
