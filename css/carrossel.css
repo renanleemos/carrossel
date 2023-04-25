@@ -21,6 +21,7 @@ body {
   width: 50%;
   height: 100%;
   border: 1px solid red;
+  transform: translateX(0px);
 }
 
 .carousel .item {
