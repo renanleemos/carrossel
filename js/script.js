@@ -2,7 +2,7 @@ const carouselItems = document.querySelectorAll(".carousel .item");
 const contentItems = document.querySelectorAll(".content .item");
 
 carouselItems.forEach((item) => {
-  item.addEventListener("click", () => {
+  item.addEventListener("mouseenter", () => {
     carouselItems.forEach((item) => {
       item.classList.remove("active");
     });
